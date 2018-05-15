@@ -1,0 +1,493 @@
+body {
+  background-color: black;
+  /*background: url("../images/back.jpg");*/
+  
+}
+
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+}
+
+#wrapper {
+  position: relative;
+  margin: auto;
+  width: 500px;
+  height: 540px;
+  z-index: 2;
+}
+
+#wrapper1 {
+  position: relative;
+  margin: 0px auto;
+  background: black;
+  color: white;
+  text-align: center;
+  font-family: sans-serif;
+  height: 750px;
+  width: 70%;
+  z-index: 2;
+  opacity: 0;
+}
+
+.description {
+  text-align: center;
+  color: white;
+  font-family: sans-serif;
+  font-size: 30px;
+
+}
+a.buttons {
+  width: 500px;
+  height: 50px;
+  text-decoration: none;
+  padding-top: 20px;
+  color: black;
+  text-align: center;
+  line-height: 20px;
+  display: block;
+  margin: 0 auto;
+  font: 20px arial;
+  border-radius: 10px;
+  margin-top: 130px;
+  z-index: 200;
+}
+
+a.buttons:not(.active) {
+  box-shadow: inset 0 1px 1px rgba(111, 55, 125, 0.8), inset 0 -1px 0px rgba(63, 59, 113, 0.2), 0 9px 16px 0 rgba(0, 0, 0, 0.3), 0 4px 3px 0 rgba(0, 0, 0, 0.3), 0 0 0 1px #150a1e;
+  background-image: linear-gradient(#15B6E4, #15B6E4);
+  text-shadow: 0 0 21px rgba(223, 206, 228, 0.5), 0 -1px 0 #311d47;
+}
+
+a.buttons:not(.active):hover,
+a.buttons:not(.active):focus {
+  transition: color 200ms linear, text-shadow 500ms linear;
+  color: #FF8810;
+  text-shadow: 0 0 21px rgba(223, 206, 228, 0.5), 0 0 10px rgba(223, 206, 228, 0.4), 0 0 2px #2a153c;
+}
+a.buttons:not(:hover) {
+    transition: 0.6s;
+}
+
+a.start {
+  width: 200px;
+  height: 50px;
+  text-decoration: none;
+  padding-top: 20px;
+  color: black;
+  text-align: center;
+  line-height: 20px;
+  display: block;
+  margin: 300px auto 0;
+  font: 20px arial;
+  border-radius: 10px;
+  opacity: 0;
+}
+
+a.start:not(.active) {
+  box-shadow: inset 0 1px 1px rgba(111, 55, 125, 0.8), inset 0 -1px 0px rgba(63, 59, 113, 0.2), 0 9px 16px 0 rgba(0, 0, 0, 0.3), 0 4px 3px 0 rgba(0, 0, 0, 0.3), 0 0 0 1px #150a1e;
+  background-image: linear-gradient(#15B6E4, #15B6E4);
+  text-shadow: 0 0 21px rgba(223, 206, 228, 0.5), 0 -1px 0 #311d47;
+}
+
+a.start:not(.active):hover,
+a.start:not(.active):focus {
+  transition: color 200ms linear, text-shadow 500ms linear;
+  color: #fff;
+  text-shadow: 0 0 21px rgba(223, 206, 228, 0.5), 0 0 10px rgba(223, 206, 228, 0.4), 0 0 2px #2a153c;
+}
+a.start:not(:hover) {
+    transition: 0.6s;
+}
+
+#start {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  display: block;
+  z-index: 9999;
+}
+
+#but2 {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  display: block;
+  width: 90px;
+  height: 20px;
+  border-radius: 10px;
+  background: #15B6E4;
+  color: black;
+  font-weight: bold;
+  border: none;
+  outline-style: none;
+}
+
+#but2:hover {
+  cursor: pointer;
+  transition: 0.8s;
+  color: white;
+}
+
+#but2:not(hover) {
+  transition: 0.8s;
+}
+
+
+#cont {
+  margin: 0px auto;
+  font-family: Verdana;
+  font-size: 30px;
+  color: white;
+  opacity: 0;
+  text-align: center; 
+}
+
+#but {
+  display: block;
+  margin: 10px auto;
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  background: #15B6E4;
+  color: black;
+  font-weight: bold;
+  border: none;
+  outline-style: none;
+}
+
+#but:hover {
+  cursor: pointer;
+  transition: 0.8s;
+  color: white;
+}
+
+#but:not(hover) {
+  transition: 0.8s;
+}
+
+#but1 {
+  position: relative;
+  top: 660px;
+  display: block;
+  margin: 0 auto ;
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  background: #15B6E4;
+  color: black;
+  font-weight: bold;
+  border: none;
+  outline-style: none;
+}
+
+#but1:hover {
+  cursor: pointer;
+  transition: 0.8s;
+  color: white;
+}
+
+#but1:not(hover) {
+  transition: 0.8s;
+}
+
+.vis {
+  position: fixed;
+  top: 0;
+  display: none;
+  margin: 10px auto;
+  background: black;
+  height: 0px;
+  width: 70%;
+  z-index: 3;
+  overflow: hidden;
+}
+
+#more-info1 {
+  position: absolute;
+  width: 300px;
+  height: 750px;
+  color: black;
+  background-color: #FF8810;
+  font-family: Verdana;
+  font-size: 20px;
+  left: -300px;
+}
+
+#more-info2 {
+  position: absolute;
+  width: 300px;
+  height: 750px;
+  color: black;
+  background-color: #FF8810;
+  font-family: Verdana;
+  font-size: 20px;
+  right: -300px;
+}
+
+#more-info3 {
+  position: absolute;
+  width: 300px;
+  height: 750px;
+  color: black;
+  background-color: #FF8810;
+  font-family: Verdana;
+  font-size: 20px;
+  left: -300px;
+}
+
+#more-info4 {
+  position: absolute;
+  width: 300px;
+  height: 750px;
+  color: black;
+  background-color: #FF8810;
+  font-family: Verdana;
+  font-size: 20px;
+  right: -300px;
+}
+
+#hide {
+  position: relative;
+  bottom: -10px;
+  display: block;
+  margin: 0 auto ;
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  background: #15B6E4;
+  color: black;
+  font-weight: bold;
+  border: none;
+  outline-style: none;
+}
+
+#hide:hover {
+  cursor: pointer;
+  transition: 0.8s;
+  color: white;
+}
+
+#hide:not(hover) {
+  transition: 0.8s;
+}
+
+#tomson {
+  margin: 20px auto 0px;
+  width: 500px;
+  height: 500px;
+  color: red;
+  font-size: 50px;
+  background: url(../images/atom.png);
+  border-radius: 50%;
+}
+
+#el5{
+  width: 50px;
+  height: 50px;
+  background: url("../images/electron.png");
+  border-radius: 50%;
+  position: relative;
+  top: 100px;
+  left: 100px;
+}
+
+#el6{
+  width: 50px;
+  height: 50px;
+  background: url("../images/electron.png");
+  border-radius: 50%;
+  position: relative;
+  top: 80px;
+  left: 365px;
+}
+
+#el7{
+  width: 50px;
+  height: 50px;
+  background: url("../images/electron.png");
+  border-radius: 50%;
+  position: relative;
+  top: 135px;
+  left: 142px;
+}
+
+#el8{
+  width: 50px;
+  height: 50px;
+  background: url("../images/electron.png");
+  border-radius: 50%;
+  position: relative;
+  top: 44px;
+  left: 245px;
+}
+
+#el9{
+  width: 50px;
+  height: 50px;
+  background: url("../images/electron.png");
+  border-radius: 50%;
+  position: relative;
+  top: 123px;
+  left: 45px;
+}
+
+#el10{
+  width: 50px;
+  height: 50px;
+  background: url("../images/electron.png");
+  border-radius: 50%;
+  position: relative;
+  top: 123px;
+  left: 335px;
+}
+
+#el11{
+  width: 50px;
+  height: 50px;
+  background: url("../images/electron.png");
+  border-radius: 50%;
+  position: relative;
+  top: -20px;
+  left: 335px;
+}
+
+#el12{
+  width: 50px;
+  height: 50px;
+  background: url("../images/electron.png");
+  border-radius: 50%;
+  position: relative;
+  top: 0px;
+  left: 200px;
+}
+
+#el13{
+  width: 50px;
+  height: 50px;
+  background: url("../images/electron.png");
+  border-radius: 50%;
+  position: relative;
+  top: -320px;
+  left: 220px;
+}
+
+#container {
+  width: 390px;
+  height: 390px;
+  margin: 100px auto;
+}
+
+#main-circle {
+  width: 50px;
+  height: 50px;
+  background: url("../images/proton.png");
+  border-radius: 50%;
+  top: 175px;
+  left: 175px;
+  position: relative;
+  z-index: 1;
+}
+
+#el1{
+  width: 50px;
+  height: 50px;
+  background: url("../images/electron.png");
+  border-radius: 50%;
+  position: relative;
+  left: 175px;
+  top: -50px;
+}
+
+#el2{
+  width: 50px;
+  height: 50px;
+  background: url("../images/electron.png");
+  border-radius: 50%;
+  position: relative;
+  left: 175px;
+  top: -25px;
+}
+
+#el3{
+  width: 50px;
+  height: 50px;
+  background: url("../images/electron.png");
+  border-radius: 50%;
+  position: relative;
+  left: 175px;
+  top: -215px;
+}
+
+#el4{
+  width: 50px;
+  height: 50px;
+  background: url("../images/electron.png");
+  border-radius: 50%;
+  position: relative;
+  left: 175px;
+  top: -215px;
+}
+
+#orbit1 {
+  width: 350px;
+  height: 350px;
+  border: dashed white;
+  border-radius: 50%;
+  position: absolute;
+  left: 380px;
+  top: 171px;
+  }
+
+  #orbit2 {
+  width: 220px;
+  height: 220px;
+  border: dashed white;
+  border-radius: 50%;
+  top: 235px;
+  left: 445px;
+  position: absolute;
+  }
+
+  #orbit3 {
+  width: 480px;
+  height: 480px;
+  border: dashed white;
+  border-radius: 50%;
+  top: 105px;
+  left: 315px;
+  position: absolute;
+  }
+
+#main {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  display: block;
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  background: #15B6E4;
+  color: black;
+  font-weight: bold;
+  border: none;
+  outline-style: none;
+}
+
+#main:hover {
+  cursor: pointer;
+  transition: 0.8s;
+  color: white;
+}
+
+#main:not(hover) {
+  transition: 0.8s;
+}
